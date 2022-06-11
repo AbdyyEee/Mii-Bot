@@ -105,7 +105,7 @@ def remove(string, replace_char):
     return embed
 
 
-n_embed = remove(embed, '')
+n_embed = remove(embed, 'None')
 
 
 if os.path.isfile(f'{name}.py'):
