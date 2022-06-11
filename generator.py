@@ -91,21 +91,21 @@ def setup(client):
 options = ['None', 'No', 'none', 'no']
 
 
-def remove(string):
+def remove(string, replace_char):
     if glasses in options:
         embed = string.replace(
             f'Glasses style: \\n {glasses} \n\\n Glasses placement: {glasses_p} \\n\\n Glasses color: \\n {glasses_color}',
-            'None'
+            replace_char
         )
     elif makeup in options:
-        embed = string.replace(f'\\n\\nMakeup: \\n {makeup}', 'None'
+        embed = string.replace(f'\\n\\nMakeup: \\n {makeup}', replace_char
         # TODO: Add checks for other properties
     else:
          embed = string
     return embed
 
 
-n_embed = remove(embed)
+n_embed = remove(embed, '')
 
 
 if os.path.isfile(f'{name}.py'):
