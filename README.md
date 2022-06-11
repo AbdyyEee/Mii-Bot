@@ -2,7 +2,7 @@
 Discord bot used for fetching Mii data.
 
 # Want to contribute?
-**Contrubuting does not require any knowledge of Python.**
+**Contrubuting is extremly simple, and does not require any knowledge of Python.**
 
 I've built a script to make contrbution easier. This is done by having the script auto-generate the code once the fields are inputed.
 
