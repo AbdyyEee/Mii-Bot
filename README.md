@@ -1,5 +1,5 @@
 # Mii-Bot
-Discord bot used for fetching Mii data.
+Discord bot used for fetching a variety of Mii data. 
 
 # Want to contribute?
 **Contrubuting is extremly simple, and does not require any knowledge of Python.**
