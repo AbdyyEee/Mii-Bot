@@ -4,7 +4,7 @@
 import os
 
 print(
-    """
+ """
 *-*-Mii Embed Generator-*-*
  Version 1.0.0
 ---------------------------
