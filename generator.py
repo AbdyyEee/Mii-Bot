@@ -61,7 +61,7 @@ from discord.ext import commands
 # Code generated with "Mii embed generator."
 # Mii: {name}
 
-class_{name}(commands.Cog):
+class mii{name}(commands.Cog):
     def __init__(self, bot):
     self.bot = bot
 
@@ -85,7 +85,7 @@ class_{name}(commands.Cog):
     \tembed_{name}.set_image(url='{image}')
 
 def setup(client):
-    client.add_cog(history(client))
+    client.add_cog(miiname(client))
 """
 
 options = ['None', 'No', 'none', 'no']
