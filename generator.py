@@ -95,6 +95,7 @@ def remove(string):
             f'Glasses style: \\n {glasses} \n\\n Glasses placement: {glasses_p} \\n\\n Glasses color: \\n {glasses_color}',
             'None',
         )
+        # TODO: Add checks for other properties
     return embed
 
 
