@@ -9,7 +9,6 @@ print(
 Version 1.0.0
 ---------------------------
 This program is made for generating a .py file for creating embeds of Miis
-This auto-generated .py file is meant for contributing to Miibot. 
 I would really appreciate any contributions to this script, or the bot itself. 
 
 *-*-Instructions-*-*
