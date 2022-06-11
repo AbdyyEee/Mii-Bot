@@ -24,7 +24,7 @@ You can also refer to existing Miis for how to phrase proportions.
 You will need an image for an embed so this is how you get one.
 Make a Mii on Mii Studio, save it and input it into Mii Renderer.
 Right click the Mii, and copy the image as link. 
-
+Paste the link when necessary 
 """
 )
 # TODO: Rephrase some of the input wording (maybe?)
