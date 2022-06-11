@@ -95,19 +95,23 @@ def remove(string):
     if glasses in options:
         embed = string.replace(
             f'Glasses style: \\n {glasses} \n\\n Glasses placement: {glasses_p} \\n\\n Glasses color: \\n {glasses_color}',
-            'None',
+            'None'
         )
+    elif makeup in options:
+        embed = string.replace(f'\\n\\nMakeup: \\n {makeup}', 'None'
         # TODO: Add checks for other properties
+    else:
+         embed = string
     return embed
 
 
-embed = remove(embed)
+n_embed = remove(embed)
 
 
 if os.path.isfile(f'{name}.py'):
     os.remove(f'{name}.py')
 file = open(f'{name}.py', 'x')
-file.write(embed)
+file.write(n_embed)
 file.close()
 print('File written! Check the directory where you ran this script. ')
 print('If you want to do another Mii, rerun the script/exe.')
