@@ -10,7 +10,6 @@ Version 1.0.0
 ---------------------------
 This program is made for generating a .py file for creating embeds of Miis
 I would really appreciate any contributions to this script, or the bot itself. 
-
 *-*-Instructions-*-*
 ---------------------------
 When inputting Mii proportions or styles that are default, enter "Default".
