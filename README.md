@@ -13,5 +13,4 @@ Once that is done, create a pull request with the "{mii name}.py" file that was 
 **Keep in mind the script is not perfect, errors can occur. I will probably catch these errors in the pull request.**
 
 # Example
-![image](https://user-images.githubusercontent.com/82438230/173198903-9d39ce7e-52d2-4349-b4a7-8196a3a03445.png)
-
+![image](https://user-images.githubusercontent.com/82438230/173198988-aa901174-3912-4a28-9590-be89082f9988.png)
