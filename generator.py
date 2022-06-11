@@ -4,9 +4,9 @@
 import os
 
 print(
- """
+"""
 *-*-Mii Embed Generator-*-*
- Version 1.0.0
+Version 1.0.0
 ---------------------------
 This program is made for generating a .py file for creating embeds of Miis
 This auto-generated .py file is meant for contributing to Miibot. 
