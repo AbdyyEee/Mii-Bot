@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 
 # Code generated with "Mii embed generator."
-# Mii: Abdyy
+# Mii: AbdyyEee
 
 
 class Abdyy(commands.Cog):
