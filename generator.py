@@ -2,7 +2,6 @@
 # Version: --> 1.0.0
 
 import os
-from tokenize import Name
 
 print(
     """
