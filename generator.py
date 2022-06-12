@@ -6,11 +6,12 @@ import os
 print(
 """
 *-*-Mii Embed Generator-*-*
-Version 1.0.0
+Version 1.1.0
 ---------------------------
 This program is made for generating a .py file for creating embeds of Miis
 I would really appreciate any contributions to this script, or the bot itself. 
 *-*-Instructions-*-*
+
 ---------------------------
 When inputting Mii proportions or styles that are default, enter "Default".
 If there is a selectable option that is not applicable to the Mii, enter "None." (example: Facial hair, glasses, etc)
@@ -19,6 +20,7 @@ For proportions, I reccomend typing "Moved up by {number}", "Stretched thinner/u
 You can also refer to existing Miis for how to phrase proportions.
 
 *-*-Images-*-*
+---------------------------
 You will need an image for an embed so this is how you get one.
 Make a Mii on Mii Studio, save it and input it into Mii Renderer.
 Right click the Mii, and copy the image as link. 
