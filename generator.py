@@ -85,6 +85,7 @@ class mii{name}(commands.Cog):
     \tembed_{name}.add_field(name='Favorite color:', value='{color}')
     \tembed_{name}.set_thumbnail(url='https://images-ext-2.discordapp.net/external/lHtmiX0tOaPw-4FdAxuYciWk-VC3uANw2CppmJiuk9A/%3Fwidth%3D140%26height%3D109/https/images-ext-2.discordapp.net/external/td2Lh5qkR0_wuAVqmAaxQ_KUuGarKjK8utLzWVBpXt0/%253Fwidth%253D175%2526height%253D136/https/media.discordapp.net/attachments/760119885996097560/964499798382243910/Mii-0.webp?width=112&height=87')
     \tembed_{name}.set_image(url='{image}')
+    \tawait ctx.send(embed=embed_{name})
 
 def setup(client):
     client.add_cog(miiname(client))
