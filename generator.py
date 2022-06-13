@@ -10,6 +10,7 @@ Version 1.1.0
 ---------------------------
 This program is made for generating a .py file for creating embeds of Miis
 I would really appreciate any contributions to this script, or the bot itself. 
+
 *-*-Instructions-*-*
 ---------------------------
 When inputting Mii proportions or styles that are default, enter "Default".
@@ -17,6 +18,7 @@ If there is a selectable option that is not applicable to the Mii, enter "None."
 Otherwise, input the proper proportions or style of said Mii.
 For proportions, I reccomend typing "Moved up by {number}", "Stretched thinner/upwards by {number}", "Moved farther/closer apart by {number} etc.
 You can also refer to existing Miis for how to phrase proportions.
+FOR SWITCH ONLY:
 To phrase options such as eyebrows, hair, skin tone, etc, reference the Column and row they are on. If the option is on a different page, specify the page first.
 
 *-*-Images-*-*
