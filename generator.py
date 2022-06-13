@@ -74,7 +74,7 @@ class mii{name}(commands.Cog):
     \tembed_{name} = discord.Embed()
     \tembed_{name}.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
     \tembed_{name}.add_field(name='Name:', value='{name}')
-    \tembed_{name}.add_field(name='Face properties:', value='Skin tone: \\n {skin} \\n\\nFace shape: \\n {face_shape} \\n\\nMakeup: \\n {makeup} \\n\\n, Face lines: \\n {face_lines} ')
+    \tembed_{name}.add_field(name='Face properties:', value='Skin tone: \\n {skin} \\n\\nFace shape: \\n {face_shape} \\n\\nMakeup: \\n {makeup} \\n\\n Face lines: \\n {face_lines} ')
     \tembed_{name}.add_field(name='Hair properties:', value='Hair style: \\n {hair} \\n\\nHair color: \\n {hair_color} ')
     \tembed_{name}.add_field(name='Eyebrow properties:', value='Eyebrow style: \\n {eyebrow} \\n\\n\\nEyebrow color: \\n {eyebrow_color} \\n\\n Eyebrow proportions: \\n {eyebrow_p} ')
     \tembed_{name}.add_field(name='Eye properties:', value='Eye style: \\n\\n {eye} \\n\\nEye color: \\n {eye_color} \\n\\n Eye proportions: \\n {eye_p}')
@@ -101,9 +101,17 @@ def remove(string, replace_char):
             f'Glasses style: \\n {glasses} \n\\n Glasses placement: {glasses_p} \\n\\n Glasses color: \\n {glasses_color}',
             replace_char
         )
+        
     elif makeup in options:
-        embed = string.replace(f'\\n\\nMakeup: \\n {makeup}', replace_char
-        # TODO: Add checks for other properties
+        embed = string.replace(f'\\n\\nMakeup: \\n {makeup}', replace_char)
+        
+    elif face_lines in options:
+        embed = string.replace(f'\\n\\n Face lines: \\n {face_lines}', replace_char)
+                               
+    elif facial_hair in options:
+        embed = string.replace(f'\\n {facial_hair} \\n\\nFacial hair proportions: \\n {facial_hair_p} \\n\\n Facial hair color: \\n {facial_hair_color}', replace_char')
+                               
+    # This assumes ALL the options are selected on a Mii
     else:
          embed = string
     return embed
