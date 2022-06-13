@@ -3,6 +3,8 @@
 
 import os
 
+options = ['None', 'No', 'none', 'no']
+
 print(
 """
 *-*-Mii Embed Generator-*-*
@@ -35,27 +37,27 @@ gender = input('Gender? ')
 color = input('Favorite color? (Names: Red, orange, yellow, light green, dark green, dark blue, light blue, pink, purple, brown, white, black. ')
 skin = input('What is the skin tone of the Mii.')
 face_shape = input('Face shape? ')
-makeup = input('Makeup? ')
-face_lines = input('Facelines?  ')
+makeup = input('Makeup? (Input none if answer is no)')
+face_lines = input('Facelines? (Input none if answer is no)')
 hair = input('Hair style? ')
-hair_color = input('Input Hair color? ')
+hair_color = input('Input the Mii Hair color? ')
 eyebrow = input('Input the Eyebrow style? ')
-eyebrow_color = input('Input hte Eyebrow color')
+eyebrow_color = input('Input the Mii Eyebrow color ')
 eyebrow_p = input('Input the Eyebrow proportions? ')
-eye = input('Eye style?  ')
-eye_color = input('Eye color?')
-eye_p = input('Eye proportions ')
-nose = input('Nose style? ')
+eye = input('Eye style? ')
+eye_color = input('What is the Eye color of the Mii? ')
+eye_p = input('Eye proportions? ')
+nose = input('What is the Nose style? ')
 nose_p = input('Nose properties? ')
-mouth = input('Mouth style ')
-mouth_p = input('Mouth propotions ')
-facial_hair = input('Facial hair?')
-facial_hair_p = input('Facial hair position?')
-facial_hair_color = input('Facial hair color?')
-mole_p = input('Mole? Size and position?')
-glasses = input('Glasses?')
-glasses_p = input('Glasses position?')
-glasses_color = input('Glasses color?')
+mouth = input('Input the Mouth style?')
+mouth_p = input('Input the Mouth propotions ')
+facial_hair = input('Facial hair? (Input none if answer is no)')
+facial_hair_p = input('Facial hair position? (Input none if previous answer was none.)')
+facial_hair_color = input('Facial hair color? (Click enter if previous answer was none.)')
+mole_p = input('Mole? Size and position? (Input none if answer is no)')
+glasses = input('Glasses? (Input none if answer is no)')
+glasses_p = input('Glasses position? (Click enter if previous answer was none.)')
+glasses_color = input('Glasses color? (Click enter if previous answer was none.)')
 image = input('Enter the Mii image url. ')
 
 # F strings are a blessing
@@ -92,8 +94,6 @@ class mii{name}(commands.Cog):
 def setup(client):
     client.add_cog(mii{name}(client))
 """
-
-options = ['None', 'No', 'none', 'no']
 
 def remove(string, replace_char):
     if glasses in options:
