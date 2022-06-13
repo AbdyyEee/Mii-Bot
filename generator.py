@@ -11,13 +11,13 @@ Version 1.1.0
 This program is made for generating a .py file for creating embeds of Miis
 I would really appreciate any contributions to this script, or the bot itself. 
 *-*-Instructions-*-*
-
 ---------------------------
 When inputting Mii proportions or styles that are default, enter "Default".
 If there is a selectable option that is not applicable to the Mii, enter "None." (example: Facial hair, glasses, etc)
 Otherwise, input the proper proportions or style of said Mii.
 For proportions, I reccomend typing "Moved up by {number}", "Stretched thinner/upwards by {number}", "Moved farther/closer apart by {number} etc.
 You can also refer to existing Miis for how to phrase proportions.
+To phrase options such as eyebrows, hair, skin tone, etc, reference the Column and row they are on. If the option is on a different page, specify the page first.
 
 *-*-Images-*-*
 ---------------------------
@@ -30,16 +30,16 @@ Paste the link when necessary
 # TODO: Rephrase some of the input wording (maybe?)
 name = input('What is the Mii name? ')
 gender = input('Gender? ')
-color = input('Favorite color? ')
-skin = input('Skin tone? ')
+color = input('Favorite color? (Names: Red, orange, yellow, light green, dark green, dark blue, light blue, pink, purple, brown, white, black. ')
+skin = input('What is the skin tone of the Mii.')
 face_shape = input('Face shape? ')
 makeup = input('Makeup? ')
 face_lines = input('Facelines?  ')
 hair = input('Hair style? ')
-hair_color = input('Hair color? ')
-eyebrow = input('Eyebrow style? ')
-eyebrow_color = input('Eyebrow color')
-eyebrow_p = input('Eyebrow proportions? ')
+hair_color = input('Input Hair color? ')
+eyebrow = input('Input the Eyebrow style? ')
+eyebrow_color = input('Input hte Eyebrow color')
+eyebrow_p = input('Input the Eyebrow proportions? ')
 eye = input('Eye style?  ')
 eye_color = input('Eye color?')
 eye_p = input('Eye proportions ')
@@ -88,11 +88,10 @@ class mii{name}(commands.Cog):
     \tawait ctx.send(embed=embed_{name})
 
 def setup(client):
-    client.add_cog(miiname(client))
+    client.add_cog(mii{name}(client))
 """
 
 options = ['None', 'No', 'none', 'no']
-
 
 def remove(string, replace_char):
     if glasses in options:
