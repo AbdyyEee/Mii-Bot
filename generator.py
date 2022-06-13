@@ -31,7 +31,7 @@ Right click the Mii, and copy the image as link.
 Paste the link when necessary 
 """
 )
-# TODO: Rephrase some of the input wording (maybe?)
+
 name = input('What is the Mii name? ')
 gender = input('Gender? ')
 color = input('Favorite color? (Names: Red, orange, yellow, light green, dark green, dark blue, light blue, pink, purple, brown, white, black. ')
