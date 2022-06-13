@@ -1,5 +1,5 @@
 # *-*-Mii Embed Generator-*-*
-# Version: --> 1.1.0
+# Version: --> 1.2.0
 
 import os
 
@@ -83,7 +83,7 @@ class mii{name}(commands.Cog):
     \tembed_{name}.add_field(name='Nose propertes:', value='Nose style: \\n {nose} \\n\\n\\nNose proportions: \\n\\n {nose_p} ')
     \tembed_{name}.add_field(name='Mouth properties:', value='Mouth style: \\n {mouth} \\n\\nMouth proportions: \\n {mouth_p} ')
     \tembed_{name}.add_field(name='Facial hair:', value='Facial hair style: \\n {facial_hair} \\n\\nFacial hair proportions: \\n {facial_hair_p} \\n\\n Facial hair color: \\n {facial_hair_color} ')
-    \tembed_{name}.add_field(name='Mole:', value='Mole style and position: \\n {mole_p}')
+    \tembed_{name}.add_field(name='Mole:', value='Mole: \\n {mole_p}')
     \tembed_{name}.add_field(name='Glasses:', value='Glasses style: \\n {glasses} \n\\n Glasses placement: {glasses_p} \\n\\n Glasses color: \\n {glasses_color}')
     \tembed_{name}.add_field(name='Gender', value='{gender}')
     \tembed_{name}.add_field(name='Favorite color:', value='{color}')
@@ -97,6 +97,7 @@ def setup(client):
 
 def remove(string, replace_char):
     if glasses in options:
+        
         embed = string.replace(
             f'Glasses style: \\n {glasses} \n\\n Glasses placement: {glasses_p} \\n\\n Glasses color: \\n {glasses_color}',
             replace_char
@@ -110,10 +111,13 @@ def remove(string, replace_char):
                                
     elif facial_hair in options:
         embed = string.replace(f'Facial hair style: \\n {facial_hair} \\n\\nFacial hair proportions: \\n {facial_hair_p} \\n\\n Facial hair color: \\n {facial_hair_color}', replace_char)
-                               
-    # This assumes ALL the options are selected on a Mii
+      
+    elif mole_p in options:
+        embed = string.replace(f'Mole: \\n {mole_p}', replace_char)
+        
     else:
          embed = string
+            
     return embed
 
 
