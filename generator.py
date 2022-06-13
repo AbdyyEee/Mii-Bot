@@ -109,7 +109,7 @@ def remove(string, replace_char):
         embed = string.replace(f'\\n\\n Face lines: \\n {face_lines}', replace_char)
                                
     elif facial_hair in options:
-        embed = string.replace(f'\\n {facial_hair} \\n\\nFacial hair proportions: \\n {facial_hair_p} \\n\\n Facial hair color: \\n {facial_hair_color}', replace_char')
+        embed = string.replace(f'\\n {facial_hair} \\n\\nFacial hair proportions: \\n {facial_hair_p} \\n\\n Facial hair color: \\n {facial_hair_color}', replace_char)
                                
     # This assumes ALL the options are selected on a Mii
     else:
