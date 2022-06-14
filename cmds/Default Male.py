@@ -4,7 +4,7 @@ from discord.ext import commands
 # Code generated with "Mii embed generator."
 # Mii: Default Male
 
-class miiDefault Male(commands.Cog):
+class mii_Default_Male(commands.Cog):
     def __init__(self, bot):
     self.bot = bot
 
