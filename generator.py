@@ -1,5 +1,5 @@
 # *-*-Mii Embed Generator-*-*
-# Version: --> 1.2.0
+# Version: --> 1.2.0 WIP
 
 import os
 
