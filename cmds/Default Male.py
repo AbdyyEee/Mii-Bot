@@ -19,7 +19,7 @@ class mii_Default_Male(commands.Cog):
     	embed_Default_Male.add_field(name='Eye properties:', value='Eye style: \n\n Default \n\nEye color: \n Black \n\n Eye proportions: \n Default')
     	embed_Default_Male.add_field(name='Nose propertes:', value='Nose style: \n Default \n\n\nNose proportions: \n\n default ')
     	embed_Default_Male.add_field(name='Mouth properties:', value='Mouth style: \n Default \n\nMouth proportions: \n Default ')
-    	embed_Default_Male.add_field(name='Facial hair:', value='Facial hair style: \n None \n\nFacial hair proportions: \n None \n\n Facial hair color: \n None')
+    	embed_Default_Male.add_field(name='Facial hair:', value='None')
     	embed_Default_Male.add_field(name='Mole:', value='Mole: \n None')
     	embed_Default_Male.add_field(name='Glasses:', value='None')
     	embed_Default_Male.add_field(name='Gender', value='Male')
