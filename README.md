@@ -1,5 +1,5 @@
 # Mii-Bot
-Discord bot used for fetching a variety of Mii data.
+Discord bot used for fetching Mii data.
 
 # Contributing
 Run "Generator.py", and input the Mii's data. Refer to existing Mii's for wording. Once done, make a pull request.
