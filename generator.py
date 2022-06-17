@@ -3,7 +3,7 @@
 
 import os
 
-options = ['None', 'No', 'none', 'no']
+options = ('None', 'none')
 
 print(
 """
