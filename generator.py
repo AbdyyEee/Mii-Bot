@@ -69,22 +69,22 @@ from discord.ext import commands
 
 class mii{name}(commands.Cog):
     def __init__(self, bot):
-    self.bot = bot
+        self.bot = bot
 
     @commands.command()
     async def mii_{name}(self, ctx):
     \tembed_{name} = discord.Embed()
     \tembed_{name}.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
     \tembed_{name}.add_field(name='Name:', value='{name}')
-    \tembed_{name}.add_field(name='Face properties:', value='Skin tone: \\n {skin} \\n\\nFace shape: \\n {face_shape} \\n\\nMakeup: \\n {makeup} \\n\\n Face lines: \\n {face_lines} ')
-    \tembed_{name}.add_field(name='Hair properties:', value='Hair style: \\n {hair} \\n\\nHair color: \\n {hair_color} ')
-    \tembed_{name}.add_field(name='Eyebrow properties:', value='Eyebrow style: \\n {eyebrow} \\n\\n\\nEyebrow color: \\n {eyebrow_color} \\n\\n Eyebrow proportions: \\n {eyebrow_p} ')
-    \tembed_{name}.add_field(name='Eye properties:', value='Eye style: \\n\\n {eye} \\n\\nEye color: \\n {eye_color} \\n\\n Eye proportions: \\n {eye_p}')
-    \tembed_{name}.add_field(name='Nose propertes:', value='Nose style: \\n {nose} \\n\\n\\nNose proportions: \\n\\n {nose_p} ')
-    \tembed_{name}.add_field(name='Mouth properties:', value='Mouth style: \\n {mouth} \\n\\nMouth proportions: \\n {mouth_p} ')
-    \tembed_{name}.add_field(name='Facial hair:', value='Facial hair style: \\n {facial_hair} \\n\\nFacial hair proportions: \\n {facial_hair_p} \\n\\n Facial hair color: \\n {facial_hair_color} ')
+    \tembed_{name}.add_field(name='Face properties:', value='Skin tone: \\n {skin} \\n\\n\\nFace shape: \\n {face_shape} \\n\\n\\nMakeup: \\n {makeup} \\n\\n\\n Face lines: \\n {face_lines} ')
+    \tembed_{name}.add_field(name='Hair properties:', value='Hair style: \\n {hair} \\n\\n\\nHair color: \\n {hair_color} ')
+    \tembed_{name}.add_field(name='Eyebrow properties:', value='Eyebrow style: \\n {eyebrow} \\n\\n\\n\\nEyebrow color: \\n {eyebrow_color} \\n\\n\\n Eyebrow proportions: \\n {eyebrow_p} ')
+    \tembed_{name}.add_field(name='Eye properties:', value='Eye style: \\n\\n\\n {eye} \\n\\n\\nEye color: \\n {eye_color} \\n\\n\\n Eye proportions: \\n {eye_p}')
+    \tembed_{name}.add_field(name='Nose propertes:', value='Nose style: \\n {nose} \\n\\n\\n\\nNose proportions: \\n\\n\\n {nose_p} ')
+    \tembed_{name}.add_field(name='Mouth properties:', value='Mouth style: \\n {mouth} \\n\\n\\nMouth proportions: \\n {mouth_p} ')
+    \tembed_{name}.add_field(name='Facial hair:', value='Facial hair style: \\n {facial_hair} \\n\\n\\nFacial hair proportions: \\n {facial_hair_p} \\n\\n\\n Facial hair color: \\n {facial_hair_color} ')
     \tembed_{name}.add_field(name='Mole:', value='Mole: \\n {mole_p}')
-    \tembed_{name}.add_field(name='Glasses:', value='Glasses style: \\n {glasses} \n\\n Glasses placement: {glasses_p} \\n\\n Glasses color: \\n {glasses_color}')
+    \tembed_{name}.add_field(name='Glasses:', value='Glasses style: \\n {glasses} \n\\n Glasses placement: {glasses_p} \\n\\n\\n Glasses color: \\n {glasses_color}')
     \tembed_{name}.add_field(name='Gender', value='{gender}')
     \tembed_{name}.add_field(name='Favorite color:', value='{color}')
     \tembed_{name}.set_thumbnail(url='https://images-ext-2.discordapp.net/external/lHtmiX0tOaPw-4FdAxuYciWk-VC3uANw2CppmJiuk9A/%3Fwidth%3D140%26height%3D109/https/images-ext-2.discordapp.net/external/td2Lh5qkR0_wuAVqmAaxQ_KUuGarKjK8utLzWVBpXt0/%253Fwidth%253D175%2526height%253D136/https/media.discordapp.net/attachments/760119885996097560/964499798382243910/Mii-0.webp?width=112&height=87')
@@ -94,7 +94,6 @@ class mii{name}(commands.Cog):
 def setup(client):
     client.add_cog(mii{name}(client))
 """
-
 def remove(string, replace_char):
     if glasses in options:
         
