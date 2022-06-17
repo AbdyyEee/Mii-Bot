@@ -7,22 +7,14 @@ load_dotenv('.env')
 TOKEN = os.getenv('TOKEN')
 client = commands.Bot(command_prefix='!')
 
-
 @client.event
 async def on_ready():
-    print('Logged in as {0.user}'.format(client))
+    print('Mii-Bot is ready.')
     await client.change_presence(activity=discord.Game('!helpmii'))
 
-
-f = []
-
-for file in os.listdir('./cmds'):
+# !mii_name command
+for file in os.listdir('cmds\!mii'):
     if file.endswith('.py'):
-        f.append("cmds." + file[:-3])
-
-if __name__ == '__main__':
-    for e in f:
-        client.load_extension(e)
-
+        client.load_extension(f'cmds.!mii.{file[:-3]}')
 
 client.run(TOKEN)
