@@ -20,7 +20,7 @@ class Abdyy(commands.Cog):
         )
         embed_Abdyy.add_field(
             name='Hair properties:',
-            value='Hair style: \n 2nd page, row 1, column 3. \n\nHair color: \n Default. ',
+            value='Hair style: \n 2nd pge, row 1, column 3. \n\nHair color: \n Default. ',
         )
         embed_Abdyy.add_field(
             name='Eyebrow properties:',
