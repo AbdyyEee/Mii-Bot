@@ -61,5 +61,5 @@ class Abdyy(commands.Cog):
         await ctx.send(embed=embed_Abdyy)
 
 
-def setup(client):
-    client.add_cog(Abdyy(client))
+async def setup(client):
+    await client.add_cog(Abdyy(client))
