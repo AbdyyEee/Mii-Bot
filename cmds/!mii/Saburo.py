@@ -58,5 +58,5 @@ class miiSaburo(commands.Cog):
         await ctx.send(embed=embed_Saburo)
 
 
-def setup(client):
-    client.add_cog(miiSaburo(client))
+async def setup(client):
+    await client.add_cog(miiSaburo(client))
