@@ -28,5 +28,5 @@ class miiDaisuke(commands.Cog):
         embed_Daisuke.set_image(url='https://cdn.discordapp.com/attachments/760119885996097560/966743759805112320/68747470733a2f2f-7066326d2e636f6d_10.png')
         await ctx.send(embed=embed_Daisuke)
 
-def setup(client):
-    client.add_cog(miiDaisuke(client))
+async def setup(client):
+    await client.add_cog(miiDaisuke(client))
