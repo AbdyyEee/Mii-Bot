@@ -58,5 +58,5 @@ class miiShinnosuke(commands.Cog):
         await ctx.send(embed=embed_Shinnosuke)
 
 
-def setup(client):
-    client.add_cog(miiShinnosuke(client))
+async def setup(client):
+    await client.add_cog(miiShinnosuke(client))
