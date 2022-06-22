@@ -52,5 +52,6 @@ class mii_Default_Male(commands.Cog):
         await ctx.send(embed=embed_Default_Male)
 
 
-def setup(client):
-    client.add_cog(mii_Default_Male(client))
+async def setup(client):
+    await client.add_cog(mii_Default_Male(client))
+
