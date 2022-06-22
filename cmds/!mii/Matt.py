@@ -58,5 +58,5 @@ class miiMatt(commands.Cog):
         await ctx.send(embed=embed_Matt)
 
 
-def setup(client):
-    client.add_cog(miiMatt(client))
+async def setup(client):
+    await client.add_cog(miiMatt(client))
