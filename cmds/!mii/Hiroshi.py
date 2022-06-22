@@ -58,5 +58,5 @@ class miiHiroshi(commands.Cog):
         await ctx.send(embed=embed_Hiroshi)
 
 
-def setup(client):
-    client.add_cog(miiHiroshi(client))
+async def setup(client):
+    await client.add_cog(miiHiroshi(client))
