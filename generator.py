@@ -66,7 +66,7 @@ glasses_p = input('Glasses position? (Click enter if previous answer was none.) 
 glasses_color = input('Glasses color? (Click enter if previous answer was none.) ')
 image = input('Enter the Mii image url. ')
 
-# F strings are a blessing
+
 embed = f"""import discord 
 from discord.ext import commands
 
