@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 cog_commands = []
 
 class mii_bot(commands.Bot):
+    """Class for loading cogs in the cmds dir:"""
     def __init__(self):
         super().__init__(
             command_prefix='!', 
