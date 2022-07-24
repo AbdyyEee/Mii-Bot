@@ -14,9 +14,9 @@ class mii_bot(commands.Bot):
             intents=discord.Intents.all()
         )
 
-        for file in os.listdir('cmds\!mii'):
+        for file in os.listdir('mii_bot/!wii_mii'):
             if file.endswith('.py'):
-                cog_commands.append(f'cmds.!mii.{file[:-3]}')
+                cog_commands.append(f'mii_bot.!wii_mii.{file[:-3]}')
 
     async def setup_hook(self):
         for file in cog_commands:
